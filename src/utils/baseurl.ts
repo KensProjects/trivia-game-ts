@@ -1,0 +1,1 @@
+export const baseUrl = import.meta.env.VITE_BASE_ENDPOINT ?? 'https://opentdb.com/api_config.php'
