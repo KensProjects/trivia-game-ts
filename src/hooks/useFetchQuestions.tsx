@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query"
-import { triviaStore, type TriviaStoreTypes } from "../zustand/store"
+import { triviaStore } from "../zustand/store"
+import { TriviaStoreTypes } from "../types/types"
 
 export default function useFetchQuestions() {
 
