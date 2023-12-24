@@ -37,7 +37,7 @@ export default function GameSettingSetter() {
     if (gameRunning) return null
 
     return (
-        <form onSubmit={handleFetchQuestions} className="flex flex-col w-8/12 sm:w-5/12 h-fit gap-1 justify-between items-center rounded-2xl border border-black px-5 py-2 bg-gray-100">
+        <form onSubmit={handleFetchQuestions} className="flex flex-col w-11/12 sm:w-5/12 h-fit gap-1 justify-between items-center rounded-2xl border border-black px-5 py-2 bg-gray-100">
             <h2 className="underline underline-offset-2 text-xl mb-2">Settings</h2>
             <div id="selection-container" className="w-full flex flex-col justify-between items-between gap-4 mb-4">
 

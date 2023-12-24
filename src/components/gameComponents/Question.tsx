@@ -42,12 +42,12 @@ export default function Question() {
     return (
         <div className="flex flex-col justify-center items-between h-full w-full gap-4">
             <h2 className="h-auto text-center text-xl">Question {questionIndex + 1}</h2>
-            <h2 className="h-auto text-center text-xl">{currentQuestion?.question}</h2>
+            <h2 className="h-auto text-center text-lg sm:text-xl">{currentQuestion?.question}</h2>
             <ul className="w-full h-full flex flex-col justify-center items-center gap-4 px-4">{currentQuestionAnswerChoices && currentQuestionAnswerChoices.map((choice:string, idx:number) => {
 
                 return <li
                     key={choice}
-                    className={`hover:bg-gray-200 cursor-pointer w-full h-auto text-lg`}
+                    className={`hover:bg-gray-200 cursor-pointer w-full h-auto text-md`}
                     onClick={() => { handleIncrease(choice) }}>
                     <span>{idx + 1}:</span> {choice}
                 </li>
